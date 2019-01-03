@@ -5,7 +5,7 @@
 <head>
     <title> Joseph Oliveira </title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -13,6 +13,31 @@
     <style>
         p.sansserif {
             font-family: Arial, sans-serif;
+        }
+
+        p {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        a {
+            font-size: 1.3em;
+            /*  em = px/16   */
+            font-weight: bold;
+        }
+
+        h3 {
+            font-family: Arial, sans-serif;
+        }
+
+        span {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        img {
+            border: 1px solid gray;
         }
     </style>
 </head>
@@ -38,13 +63,13 @@
     <!--Header Section-->
     <div class="page-header">
 
-        <h1 class="text-center sansserif">
+        <h1 class="text-center sansserif" style:="font-size:10vw;">
             <b>Joseph Oliveira</b>
         </h1>
 
-        <p class="text-center small sansserif">
+        <h3 class="text-center small sansserif">
             Former pharmaceutical lab scientist turned coder. Insatiably curious.
-        </p>
+        </h3>
 
         <br></br>
         <div class="conatiner">
@@ -52,8 +77,8 @@
                 <img class="img-responsive img-rounded center-block" src="smile.png">
             </div>
             <div class="col-md-6">
-                <p style="text-justify:auto;" class="sansserif">
-                    About: I am a currently a Masters student at North Carolina State University studying
+                <p class="sansserif">
+                    <span>About:</span> I am a currently a Masters student at North Carolina State University studying
                     Statistics with a focus on data science and machine learning applications. Prior to NCSU I
                     studied at Barton College, and graduated in 2014 with a Bachelor's of Science in Chemistry and
                     Mathematics. For the past three years I explored the chemistry side of my degree as an
