@@ -7,6 +7,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -16,12 +18,14 @@
         }
 
         p {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: justify;
+            font-family: "Arial";
+            font-size: 3em;
+            padding: 25px;
+            word-spacing: 0px;
+
         }
 
-        a {
+        li {
             font-size: 1.3em;
             /*  em = px/16   */
             font-weight: bold;
@@ -36,8 +40,8 @@
             font-weight: bold;
         }
 
-        img {
-            border: 1px solid gray;
+        dl {
+            padding: 25px;
         }
     </style>
 </head>
@@ -60,10 +64,39 @@
 
 <body background="AdobeStock_148326746.jpeg">
 
-    <!--Header Section-->
+
     <!--Body Section-->
-    <div class="text-center">
-        <a href="https://tinyurl.com/yap6rq2y" target="_blank">Resume</a>
+    <div class="col-md-5">
+        <p>
+            <i class="glyphicon glyphicon-envelope"></i>
+            Shoot me an
+            <a href="mailto:JDOliveira144@gmail.com?Subject=I visited your site..." target="_top">email</a>
+        </p>
+        <p>
+            Or reach me at any of my social media sites:
+            <dl>
+                <li><a href="#" class="fab fa-github"></a></li>
+                <li><a href="#" class="fab fa-linkedin"></a></li>
+                <li><a href="#" class="fab fa-hackerrank"></a></li>
+                <li><a href="#" class="fab fa-kaggle"></a></li>
+            </dl>
+
+
+
+
+        </p>
+
+
+
+        <!-- To send email from sever, would need to use PHP. Sticking to JS for now.
+            
+            <form id= "email" action="/action_page.php">
+        
+        Subject: <input type="text" name="subject"><br>
+        Body: <input type="text" name="body"><br><br>
+        <input type="button" onclick="myFunction()" value="Send">
+        </form>
+        -->
     </div>
 </body>
 
